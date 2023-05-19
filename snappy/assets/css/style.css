@@ -630,6 +630,18 @@ span {
     background-color: #DD0AFF;
 }
 
+.feature-section .single-feature .icon.color-7 {
+    background-color: #6f9ad1;
+}
+
+.feature-section .single-feature .icon.color-8 {
+    background-color: #debe06;
+}
+
+.feature-section .single-feature .icon.color-9 {
+    background-color: #d63535;
+}
+
 .feature-section .single-feature .icon::after {
     content: '';
     position: absolute;
