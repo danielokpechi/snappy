@@ -7,7 +7,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    color: #747e74;
+    color: #3f453f;
     overflow-x: hidden;
 }
 
@@ -312,6 +312,11 @@ span {
     display: none;
 }
 
+@media (min-width: 1024px) {
+    .col-lg-6.col-md-10 {
+      margin-top: 100px; /* Adjust the margin value for screens with a resolution of 1024x768 */
+    }
+  }
 @media only screen and (min-width: 768px) and (max-width: 991px),
 (max-width: 767px) {
     .navbar-collapse {
@@ -332,14 +337,19 @@ span {
     .header-hero .shape.shape-6 {
         display: none;
     }
+    .header-hero .shape.shape-5 {
+        top: 85%;
+    }
     .image {
         display: none;
       }
     
-      .image-small {
-        max-width: 80px;
+    .image-small {
+        max-width: 70px;
         display: inline-block;
-      }
+    }
+
+    
 }
 
 .navbar-light .navbar-toggler {
@@ -369,7 +379,7 @@ span {
     color: #ff846f;
 }
 
-.navbar-nav .nav-item .nav-link::before {
+/* .navbar-nav .nav-item .nav-link::before {
     content: '';
     position: absolute;
     width: 8px;
@@ -380,7 +390,7 @@ span {
     background-color: #38424d;
     opacity: 0;
     transition: all .3 ease-out 0s;
-}
+} */
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
 (max-width: 767px) {
@@ -396,6 +406,12 @@ span {
 
 
 /* ----------- home css ---------- */
+.snappy-text {
+  color: white;
+  text-shadow: -1.5px -1.5px 0 #3c84c5, 1.5px -1.5px 0 #3c84c5, -1.5px 1.5px 0 #3c84c5, 1.5px 1.5px 0 #3c84c5;
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari/Chrome */
+}
 
 .header-hero {
     position: relative;
@@ -935,27 +951,38 @@ span {
 .download-content ul li {
     display: inline-block;
     margin-top: 15px;
+    padding: 5px;
 }
 
 .download-content ul li a {
     width: 210px;
-    height: 65px;
+    /* height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    box-shadow: -15px 10px 30px 0 rgb(0 0 0 / 30%);
+    box-shadow: -15px 10px 30px 0 rgb(0 0 0 / 30%); */
 }
 
-.download-content ul li a.app-store {
+/* .download-content ul li a.app-store {
     margin-right: 28px;
     background-color: #0898e7;
-}
+} */
 
-.download-content ul li a.play-store {
+/* .download-content ul li a.play-store {
     background-color: #525a63;
-}
+} */
 
+@media (max-width: 767px) {
+    .download-content ul li a {
+      width: 180px;
+      display: inline-block;
+      height: 50px;
+      font-size: 14px;
+    }
+  
+  }
+  
 /* ----------- footer css --------- */
 
 .footer-area {
