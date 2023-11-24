@@ -305,7 +305,7 @@ span {
 
 
 .navbar-brand .image {
-    max-width: 150px;
+    max-width: 100px;
 }
 
 .image-small {
@@ -406,7 +406,7 @@ span {
 
 
 /* ----------- home css ---------- */
-.snappy-text {
+.Snappi-text {
   color: white;
   text-shadow: -1.5px -1.5px 0 #3c84c5, 1.5px -1.5px 0 #3c84c5, -1.5px 1.5px 0 #3c84c5, 1.5px 1.5px 0 #3c84c5;
   background-clip: text;
